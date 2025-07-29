@@ -12,4 +12,9 @@ func main() {
 
 	fmt.Println((nums))
 	fmt.Println(len(nums)) // get the array length
+
+	//2d array.
+	value := [2][4]int{{1, 2, 3, 4}, {4, 3, 2, 1}}
+
+	fmt.Println(value)
 }
