@@ -71,4 +71,29 @@ func main() {
 	default:
 		fmt.Println("not matched")
 	}
+
+	//Grading.
+	marks := 30
+	switch true {
+	case marks >= 90:
+		fmt.Println("A+")
+
+	case marks >= 80:
+		fmt.Println("A")
+
+	case marks >= 70:
+		fmt.Println("B+")
+
+	case marks >= 60:
+		fmt.Println("B")
+
+	case marks >= 50:
+		fmt.Println("C+")
+
+	case marks >= 40:
+		fmt.Println("B+")
+
+	default:
+		fmt.Println("Your Student is fail")
+	}
 }
