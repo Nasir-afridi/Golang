@@ -29,7 +29,7 @@ func main() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("it's weekend")
 
-	case time.Wednesday:
+	default:
 		fmt.Println("it's office day")
 	}
 
@@ -51,4 +51,24 @@ func main() {
 		}
 	}
 	whoAmI(44)
+
+	// fallthrough: condition check kiye bina next prr chala jata hai.
+	num := 1
+
+	switch num {
+	case 1:
+		fmt.Println("one")
+		fallthrough
+	case 2:
+		fmt.Println("two")
+		fallthrough
+	case 3:
+		fmt.Println("three")
+		fallthrough
+	case 4:
+		fmt.Println("four")
+
+	default:
+		fmt.Println("not matched")
+	}
 }
