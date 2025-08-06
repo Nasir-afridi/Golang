@@ -32,4 +32,21 @@ func main() {
 	fmt.Println(nu)
 	fmt.Println(len(nu))
 	fmt.Println(cap(nu))
+
+	// copy function.
+	arr := make([]int, 0, 5)
+	arr = append(arr, 4, 5, 6, 6, 6)
+	fmt.Println(arr)
+
+	arr2 := make([]int, len(arr))
+	fmt.Println(arr2)
+
+	copy(arr2, arr) // sabsy paihly osko rkhna hai jismein copy krna yane arr2 hia pher osay jissay copy krna hai arr.
+	fmt.Println(arr, arr2)
+
+	//Slices operator
+	nmb := []int{1, 2, 4, 5, 6}
+	fmt.Println(nmb[0:4]) // iska mtlb hai kk 0 index sy 4 index kk peechy tkk jtny elements hain sirf onko lo
+	fmt.Println(nmb[:4])  // jbb left side prr kuch na ho to mtlb 0 sy start hoga 4 tkk.
+	fmt.Println(nmb[0:])  // ismein ye hoga kk jo index ham daingy wahan sy end tkk sbb print kryga
 }
