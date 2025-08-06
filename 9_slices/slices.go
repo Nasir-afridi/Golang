@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 // Slices : Dynamic arrays. ye bohot zyada use hotay hain go mein + ismein useful methods be hoty hain.
 
@@ -49,4 +52,9 @@ func main() {
 	fmt.Println(nmb[0:4]) // iska mtlb hai kk 0 index sy 4 index kk peechy tkk jtny elements hain sirf onko lo
 	fmt.Println(nmb[:4])  // jbb left side prr kuch na ho to mtlb 0 sy start hoga 4 tkk.
 	fmt.Println(nmb[0:])  // ismein ye hoga kk jo index ham daingy wahan sy end tkk sbb print kryga
+
+	// Checking that the two slices are equal or not.
+	str := []string{"Nasir", "khan"}
+	str2 := []string{"Nasir", "khan"}
+	fmt.Println(slices.Equal(str, str2))
 }
