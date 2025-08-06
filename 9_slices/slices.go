@@ -26,4 +26,10 @@ func main() {
 	fmt.Println(cap(num))
 	fmt.Println(len(num))
 
+	// empty slice created using literal notation
+	nu := []int{}
+	nu = append(nu, 10, 20, 30, 40, 50, 60)
+	fmt.Println(nu)
+	fmt.Println(len(nu))
+	fmt.Println(cap(nu))
 }
