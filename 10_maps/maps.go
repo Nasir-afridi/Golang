@@ -16,4 +16,7 @@ func main() {
 
 	delete(m, "phone") // delete the element from the map.
 	fmt.Println(m)
+
+	clear(m) // clear the map
+	fmt.Println(m)
 }
